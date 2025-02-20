@@ -21,7 +21,7 @@ def get_media_info(file_path, thumb_path=None):
             )
         return duration, thumb_path
     except Exception as e:
-        print(f"FFmpeg Error: {e}")
+        lg.info(f"FFmpeg Error: {e}")
         return 0, None
 
 # Function to upload file with progress updates
